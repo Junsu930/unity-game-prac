@@ -36,7 +36,10 @@ public class BallScript : MonoBehaviour
         }
     }
 
-
+    public void Jump()
+    {
+        rigid.AddForce(Vector3.up * 20, ForceMode.Impulse);
+    }
 
 
 }
